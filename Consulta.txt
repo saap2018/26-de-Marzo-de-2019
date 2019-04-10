@@ -1,0 +1,1 @@
+SELECT tiempo,PlacasVehiculo,Lugar FROM ingresos INNER JOIN (SELECT vehiculos.NombreCliente, vehiculos.Marca, vehiculos.TipoV,  FROM vehiculos) as A WHERE ingresos.PlacasVehiculo = vehiculos.Placas
